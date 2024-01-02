@@ -19,9 +19,10 @@ const New = ({ inputs, title }) => {
     data.append("file", file)
     data.append("upload_preset", "upload")
     try{
-      const uploadRes = await axios.post("https://api.cloudinary.com/v1_1/dfsyhwqca/image/upload", data)
+      const uploadRes = await axios.post("https://api.cloudinary.com/v1_1/dfsyhwqca/image/upload",
+       data)
 
-      const {url} = uploadRes.data
+      const {url} = uploadRes.data;
 
       const newUser = {
         ...info,
