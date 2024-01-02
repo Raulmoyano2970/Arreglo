@@ -39,16 +39,20 @@ const Sidebar = () => {
               <span>Users</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+        {/* //ACA PODEMOS CAMBIAR EL NOMBRE DE LA RUTA y SPAN */}
+          <Link to="/hotels" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
-              <span>Products</span>
+              <span>Hotels</span>
             </li>
           </Link>
+          <Link to="/rooms" style={{ textDecoration: "none" }}>
           <li>
+            {/* ORDENES PUEDE IR ACA */}
             <CreditCardIcon className="icon" />
-            <span>Orders</span>
+            <span>Rooms</span>
           </li>
+          </Link>
           <li>
             <LocalShippingIcon className="icon" />
             <span>Delivery</span>
